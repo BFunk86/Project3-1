@@ -108,7 +108,7 @@
                         <label><input type="checkbox" id="php" name="php" value="php">PHP</label>
                     </div>
                     <div class="checkbox">
-                        <label><input type="checkbox" id="seminars" name="mysql" value="mysql">MySQL</label>
+                        <label><input type="checkbox" id="mysql" name="mysql" value="mysql">MySQL</label>
                     </div>
                     <div class="checkbox">
                         <label><input type="checkbox" id="apache" name="apache" value="apache">Apache</label>

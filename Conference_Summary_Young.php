@@ -10,6 +10,42 @@
 
     print_r($_POST);
 
+    // Set value to false if javascript is not checked or true otherwise
+    if(empty($_POST['javascript'])) {
+        $_SESSION['seminar']['javascript'] = false;
+    } else if(!empty($_POST['javascript'])) {
+        $_SESSION['seminar']['javascript'] = false;
+    } // end if else
+
+    // Set value to false if php is not checked or true otherwise
+    if(empty($_POST['php'])) {
+        $_SESSION['seminar']['php'] = false;
+    } else if(!empty($_POST['php'])) {
+        $_SESSION['seminar']['php'] = false;
+    } // end if else
+
+    // Set value to false if mysql is not checked or true otherwise
+    if(empty($_POST['mysql'])) {
+        $_SESSION['seminar']['mysql'] = false;
+    } else if(!empty($_POST['mysql'])) {
+        $_SESSION['seminar']['mysql'] = false;
+    } // end if else
+
+    // Set value to false if apache is not checked or true otherwise
+    if(empty($_POST['apache'])) {
+        $_SESSION['seminar']['apache'] = false;
+    } else if(!empty($_POST['apache'])) {
+        $_SESSION['seminar']['apache'] = false;
+    } // end if else
+
+    // Set value to false if web is not checked or true otherwise
+    if(empty($_POST['web'])) {
+        $_SESSION['seminar']['web'] = false;
+    } else if(!empty($_POST['web'])) {
+        $_SESSION['seminar']['web'] = false;
+    } // end if else
+
+
 
 
 ?>
