@@ -7,46 +7,40 @@
     // The Message that will be displayed if there are any errors
     $body = "";
 
-
-    print_r($_POST);
-
     // Set value to false if javascript is not checked or true otherwise
     if(empty($_POST['javascript'])) {
-        $_SESSION['seminar']['javascript'] = false;
+        $_SESSION['seminar']['javascript'] = "no";
     } else if(!empty($_POST['javascript'])) {
         $_SESSION['seminar']['javascript'] = false;
     } // end if else
 
     // Set value to false if php is not checked or true otherwise
     if(empty($_POST['php'])) {
-        $_SESSION['seminar']['php'] = false;
+        $_SESSION['seminar']['php'] = "no";
     } else if(!empty($_POST['php'])) {
-        $_SESSION['seminar']['php'] = false;
+        $_SESSION['seminar']['php'] = "yes";
     } // end if else
 
     // Set value to false if mysql is not checked or true otherwise
     if(empty($_POST['mysql'])) {
-        $_SESSION['seminar']['mysql'] = false;
+        $_SESSION['seminar']['mysql'] = "no";
     } else if(!empty($_POST['mysql'])) {
-        $_SESSION['seminar']['mysql'] = false;
+        $_SESSION['seminar']['mysql'] = "yes";
     } // end if else
 
     // Set value to false if apache is not checked or true otherwise
     if(empty($_POST['apache'])) {
-        $_SESSION['seminar']['apache'] = false;
+        $_SESSION['seminar']['apache'] = "no";
     } else if(!empty($_POST['apache'])) {
-        $_SESSION['seminar']['apache'] = false;
+        $_SESSION['seminar']['apache'] = "yes";
     } // end if else
 
     // Set value to false if web is not checked or true otherwise
     if(empty($_POST['web'])) {
-        $_SESSION['seminar']['web'] = false;
+        $_SESSION['seminar']['web'] = "no";
     } else if(!empty($_POST['web'])) {
-        $_SESSION['seminar']['web'] = false;
+        $_SESSION['seminar']['web'] = "yes";
     } // end if else
-
-
-
 
 ?>
 <!DOCTYPE html>
@@ -75,7 +69,10 @@
             crossorigin="anonymous"></script>
     <style>
         /* Style to fix link button inside form */
-        button a, button a:hover{color: inherit;text-decoration: inherit;}
+        button a, button a:hover {
+            color: inherit;
+            text-decoration: inherit;
+        }
     </style>
 </head>
 <body>
@@ -85,14 +82,53 @@
     </div>
     <p>You entered the following information</p>
     <div class="row">
-        <?php
-
-            /**
-             *
-             * Author: Brandon Young
-             */
-        ?>
-    </div>
-</div>
+        <form action="Conference_Register_Young.php" method="post">
+            <table class="table-bordered">
+                <tbody>
+                <td>
+                    <h2><a href="Conference_Start_Young.php">Personal Information</a></h2>
+                    <?php
+                        //This section outputs the Personal Information
+                        echo "<p>First Name: " . $_SESSION['personal']['fName'] . "</p>";
+                        echo "<p>Last Name: " . $_SESSION['personal']['lName'] . "</p>";
+                        echo "<p>Address: " . $_SESSION['personal']['address'] . "</p>";
+                        echo "<p>City: " . $_SESSION['personal']['city'] . "</p>";
+                        echo "<p>State: " . $_SESSION['personal']['state'] . "</p>";
+                        echo "<p>Zip Code: " . $_SESSION['personal']['zip'] . "</p>";
+                        echo "<p>Phone: " . $_SESSION['personal']['phone'] . "</p>";
+                        echo "<p>Email: " . $_SESSION['personal']['email'] . "</p>";
+                    ?>
+                </td>
+                <td>
+                    <h2><a href="Conference_Company_Young.php">Company Information</a></h2>
+                    <?php
+                        // This section outputs the Company Information
+                        echo "<p>Company Name: " . $_SESSION['company']['cName'] . "</p>";
+                        echo "<p>Address: " . $_SESSION['company']['address'] . "</p>";
+                        echo "<p>City: " . $_SESSION['company']['city'] . "</p>";
+                        echo "<p>State: " . $_SESSION['company']['state'] . "</p>";
+                        echo "<p>Zip Code: " . $_SESSION['company']['zip'] . "</p>";
+                        echo "<p>Phone: " . $_SESSION['company']['phone'] . "</p>";
+                    ?>
+                </td>
+                <td>
+                    <h2><a href="Conference_Seminars_Young.php">Seminars</a></h2>
+                    <?php
+                        // This section outputs the Seminar Information
+                        echo "<p>Javascript Seminar: " . $_SESSION['seminar']['javascript'] . "</p>";
+                        echo "<p>PHP Seminar: " . $_SESSION['seminar']['php'] . "</p>";
+                        echo "<p>MySQL Seminar: " . $_SESSION['seminar']['mysql'] . "</p>";
+                        echo "<p>Apache Seminar: " . $_SESSION['seminar']['apache'] . "</p>";
+                        echo "<p>Web Services Seminar: " . $_SESSION['seminar']['web'] . "</p>";
+                    ?>
+                </td>
+                </tbody>
+            </table>
+            <input type="submit" class="btn" value="Register">
+            <button class="btn" type="button"><a href="Conference_Seminars_Young.php" alt="Go Back">Back</a></button>
+            <button class="btn"><a href="Conference_Restart_Young.php">Start Over</a></button>
+        </form>
+    </div><!-- .row -->
+</div><!-- .container -->
 </body>
 </html>
