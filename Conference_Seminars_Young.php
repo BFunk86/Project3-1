@@ -37,7 +37,7 @@
         $body .= "<p class='text-danger'>You need to enter your Zip Code</p>";
     } // end if
 
-    // Check comapny phone number
+    // Check company phone number
     if( empty($_POST['cPhone']) ) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Phone number</p>\n";
@@ -59,7 +59,6 @@
         $_SESSION['company']['zip'] = $cZip;
         $cPhone = stripslashes($_POST['cPhone']);
         $_SESSION['company']['phone'] = $cPhone;
-        print_r($_SESSION);
     } // end if else
 
 ?>

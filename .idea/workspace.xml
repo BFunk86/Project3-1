@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80299231-1d29-4bce-8801-91b5788ca9bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Project3-1.iml" afterPath="$PROJECT_DIR$/.idea/Project3-1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conference_Company_Young.php" afterPath="$PROJECT_DIR$/Conference_Company_Young.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conference_Seminars_Young.php" afterPath="$PROJECT_DIR$/Conference_Seminars_Young.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conference_Start_Young.php" afterPath="$PROJECT_DIR$/Conference_Start_Young.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Conference_Summary_Young.php" afterPath="$PROJECT_DIR$/Conference_Summary_Young.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conference_Company_Young.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Conference_Company_Young.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Conference_Company_Young.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+            <state relative-caret-position="325">
+              <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -42,14 +39,14 @@
       <file leaf-file-name="Conference_Seminars_Young.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conference_Seminars_Young.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="122" column="56" lean-forward="false" selection-start-line="122" selection-start-column="56" selection-end-line="122" selection-end-column="56" />
+            <state relative-caret-position="17">
+              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Conference_Summary_Young.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Conference_Summary_Young.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conference_Summary_Young.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
@@ -82,9 +79,9 @@
         <option value="$PROJECT_DIR$/Conference_Register_Young.php" />
         <option value="$PROJECT_DIR$/Conference_Restart_Young.php" />
         <option value="$PROJECT_DIR$/Conference_Start_Young.php" />
-        <option value="$PROJECT_DIR$/Conference_Company_Young.php" />
-        <option value="$PROJECT_DIR$/Conference_Seminars_Young.php" />
         <option value="$PROJECT_DIR$/Conference_Summary_Young.php" />
+        <option value="$PROJECT_DIR$/Conference_Seminars_Young.php" />
+        <option value="$PROJECT_DIR$/Conference_Company_Young.php" />
       </list>
     </option>
   </component>
@@ -263,12 +260,12 @@
       <workItem from="1494340523421" duration="5083000" />
       <workItem from="1494375313054" duration="3130000" />
       <workItem from="1494855378746" duration="11445000" />
-      <workItem from="1494889954907" duration="5041000" />
+      <workItem from="1494889954907" duration="5753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24699000" />
+    <option name="totallyTimeSpent" value="25411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -381,22 +378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Conference_Seminars_Young.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="122" column="56" lean-forward="false" selection-start-line="122" selection-start-column="56" selection-end-line="122" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Conference_Company_Young.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="155" column="43" lean-forward="true" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conference_Summary_Young.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -414,6 +395,22 @@
             <marker date="1494895012310" expanded="true" signature="2934:6033" ph="..." />
             <marker date="1494895012310" expanded="true" signature="4879:5089" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference_Seminars_Young.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Conference_Company_Young.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="73" column="12" lean-forward="true" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

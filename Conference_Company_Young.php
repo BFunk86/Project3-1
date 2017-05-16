@@ -31,13 +31,13 @@
         $body .= "<p class='text-danger'>You need to enter your City</p>";
     } // end if
 
-    // Check first state
+    // Check state
     if( empty($_POST['state']) ) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your State</p>";
     } // end if
 
-    // Check first zip code
+    // Check zip code
     if( empty($_POST['zip']) ) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Zip Code</p>";
