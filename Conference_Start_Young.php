@@ -42,7 +42,7 @@
         <div class="col-xs-8">
             <form class="form" action="Conference_Company_Young.php" method="post">
                 <fieldset>
-                    <legend><h2>Personal Information</h2></legend>
+                    <legend>Personal Information</legend>
                     <div class="form-group col-xs-6">
                         <label for="fName" class="control-label">First Name:</label>
                         <input type="text" class="form-control" id="fName" name="fName" placeholder="Enter your first name" autofocus required>

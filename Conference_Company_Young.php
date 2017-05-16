@@ -126,30 +126,30 @@
         <div class="col-xs-8">
             <form class="form" action="Conference_Seminars_Young.php" method="post">
                 <fieldset>
-                    <legend><h2>Company Information</h2></legend>
+                    <legend>Company Information</legend>
                     <div class="form-group col-xs-12">
                         <label for="cName" class="control-label">Company Name:</label>
-                        <input type="text" class="form-control" id="cName" placeholder="Enter Company Name" autofocus>
+                        <input type="text" class="form-control" id="cName" name="cName" placeholder="Enter Company Name" autofocus>
                     </div>
                     <div class="form-group col-xs-6">
                         <label for="cAddress" class="control-label">Address:</label>
-                        <input type="text" class="form-control" id="cAddress" placeholder="Enter Company Address">
+                        <input type="text" class="form-control" id="cAddress" name="cAddress" placeholder="Enter Company Address">
                     </div>
                     <div class="form-group col-xs-6">
                         <label for="cCity" class="control-label">City:</label>
-                        <input type="text" class="form-control" id="cCity" placeholder="Enter Company City">
+                        <input type="text" class="form-control" id="cCity" name="cCity" placeholder="Enter Company City">
                     </div>
                     <div class="form-group col-xs-6">
                         <label for="cState" class="control-label">State:</label>
-                        <input type="text" class="form-control" id="cState" placeholder="Enter Company State">
+                        <input type="text" class="form-control" id="cState" name="cState" placeholder="Enter Company State">
                     </div>
                     <div class="form-group col-xs-6">
                         <label for="zip" class="control-label">Zip:</label>
-                        <input type="text" class="form-control" id="cZip" placeholder="Enter Company Zip Code">
+                        <input type="text" class="form-control" id="cZip" name="cZip" placeholder="Enter Company Zip Code">
                     </div>
                     <div class="form-group col-xs-8">
                         <label for="phone" class="control-label">Phone:</label>
-                        <input type="text" class="form-control" id="cPhone" placeholder="Enter Company Phone #">
+                        <input type="text" class="form-control" id="cPhone" name="cPhone" placeholder="Enter Company Phone #">
                     </div>
                     <div class="form-group col-xs-12">
                         <input type="submit" class="btn" name="cSubmit" value="Next">

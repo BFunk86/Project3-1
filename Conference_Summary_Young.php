@@ -11,7 +11,7 @@
     if(empty($_POST['javascript'])) {
         $_SESSION['seminar']['javascript'] = "no";
     } else if(!empty($_POST['javascript'])) {
-        $_SESSION['seminar']['javascript'] = false;
+        $_SESSION['seminar']['javascript'] = "yes";
     } // end if else
 
     // Set value to false if php is not checked or true otherwise
@@ -73,6 +73,9 @@
             color: inherit;
             text-decoration: inherit;
         }
+        td {
+            vertical-align: top;
+        }
     </style>
 </head>
 <body>
@@ -85,7 +88,8 @@
         <form action="Conference_Register_Young.php" method="post">
             <table class="table-bordered">
                 <tbody>
-                <td>
+                <tr>
+                <td class="col-xs-4">
                     <h2><a href="Conference_Start_Young.php">Personal Information</a></h2>
                     <?php
                         //This section outputs the Personal Information
@@ -99,7 +103,7 @@
                         echo "<p>Email: " . $_SESSION['personal']['email'] . "</p>";
                     ?>
                 </td>
-                <td>
+                <td class="col-xs-4">
                     <h2><a href="Conference_Company_Young.php">Company Information</a></h2>
                     <?php
                         // This section outputs the Company Information
@@ -111,7 +115,7 @@
                         echo "<p>Phone: " . $_SESSION['company']['phone'] . "</p>";
                     ?>
                 </td>
-                <td>
+                <td class="col-xs-4">
                     <h2><a href="Conference_Seminars_Young.php">Seminars</a></h2>
                     <?php
                         // This section outputs the Seminar Information
@@ -122,11 +126,15 @@
                         echo "<p>Web Services Seminar: " . $_SESSION['seminar']['web'] . "</p>";
                     ?>
                 </td>
+                </tr>
                 </tbody>
             </table>
-            <input type="submit" class="btn" value="Register">
-            <button class="btn" type="button"><a href="Conference_Seminars_Young.php" alt="Go Back">Back</a></button>
-            <button class="btn"><a href="Conference_Restart_Young.php">Start Over</a></button>
+            <br>
+            <div class="form-group">
+                <input type="submit" class="btn" value="Register">
+                <button class="btn" type="button"><a href="Conference_Seminars_Young.php">Back</a></button>
+                <button class="btn" type="button"><a href="Conference_Restart_Young.php">Start Over</a></button>
+            </div>
         </form>
     </div><!-- .row -->
 </div><!-- .container -->

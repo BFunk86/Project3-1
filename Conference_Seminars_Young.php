@@ -59,6 +59,7 @@
         $_SESSION['company']['zip'] = $cZip;
         $cPhone = stripslashes($_POST['cPhone']);
         $_SESSION['company']['phone'] = $cPhone;
+        print_r($_SESSION);
     } // end if else
 
 ?>
@@ -100,7 +101,7 @@
         <div class="col-xs-8">
             <form class="form" action="Conference_Summary_Young.php" method="post">
                 <fieldset>
-                    <legend><h2>Seminars</h2></legend>
+                    <legend>Seminars</legend>
                     <div class="checkbox">
                         <label><input type="checkbox" id="javascript" name="javascript" value="javascript">JavaScript</label>
                     </div>
@@ -118,8 +119,8 @@
                     </div>
                     <div class="form-group col-xs-12">
                         <input type="submit" class="btn" value="Next">
-                        <button class="btn" type="button"><a href="Conference_Company_Young.php" alt="Go Back">Back</a></button>
-                        <button class="btn"><a href="Conference_Restart_Young.php">Start Over</a></button>
+                        <button class="btn" type="button"><a href="Conference_Company_Young.php">Back</a></button>
+                        <button class="btn" type="button"><a href="Conference_Restart_Young.php">Start Over</a></button>
                     </div>
                 </fieldset>
             </form>
