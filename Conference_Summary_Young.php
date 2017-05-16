@@ -1,11 +1,11 @@
 <?php
+    /**
+     * The Conference_Summary_Young.php script collects the seminars from the seminars form and then displays all
+     * of the information from the user as a summary.
+     */
+
     // Validate values from Personal Information form
     session_start();
-
-    // Counter for errors
-    $errors = 0;
-    // The Message that will be displayed if there are any errors
-    $body = "";
 
     // Set value to false if javascript is not checked or true otherwise
     if(empty($_POST['javascript'])) {

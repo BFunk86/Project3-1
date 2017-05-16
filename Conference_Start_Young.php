@@ -1,4 +1,10 @@
 <?php
+    /**
+     * The Conference_Start_Young.php script sets the session as an array and then displays
+     * the personal information form.
+     * author: Brandon Young
+     */
+
     # Start new Session
     session_start();
     # make session an array
@@ -81,16 +87,8 @@
                     </div>
                 </fieldset>
             </form>
-        </div>
-
-        <?php
-
-            /**
-             *
-             * Author: Brandon Young
-             */
-        ?>
-    </div>
-</div>
+        </div><!-- .col-xs-8 -->
+    </div><!-- .row -->
+</div><!-- .container -->
 </body>
 </html>

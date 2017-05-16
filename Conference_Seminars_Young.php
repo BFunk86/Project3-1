@@ -1,4 +1,9 @@
 <?php
+    /**
+     * The Conference_Seminars_Young.php script is used to display the selection of seminars to attend.
+     * This script also handles the validation of the Company Information form and saves it to the session
+     */
+
     // Validate values from Personal Information form
     session_start();
 
@@ -8,43 +13,43 @@
     $body = "";
 
     // Check company name
-    if( empty($_POST['cName']) ) {
+    if(empty($_POST['cName'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Company Name</p>";
     } // end if
 
     // Check company address
-    if( empty($_POST['cAddress']) ) {
+    if(empty($_POST['cAddress'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Company Address</p>";
     } // end if
 
     // Check company city
-    if( empty($_POST['cCity']) ) {
+    if(empty($_POST['cCity'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Company City</p>";
     } // end if
 
     // Check company state
-    if( empty($_POST['cState']) ) {
+    if(empty($_POST['cState'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Company State</p>";
     } // end if
 
     // Check company zip code
-    if( empty($_POST['cZip']) ) {
+    if(empty($_POST['cZip'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Zip Code</p>";
     } // end if
 
     // Check company phone number
-    if( empty($_POST['cPhone']) ) {
+    if(empty($_POST['cPhone'])) {
         ++$errors;
         $body .= "<p class='text-danger'>You need to enter your Phone number</p>\n";
     } // end if
 
     // Add information to session if there are no errors
-    if ($errors > 0) {
+    if($errors > 0) {
         $body .= "<p>Please use your browser's BACK button to return to the form and fix the errors indicated.</p>\n";
     } else {
         $cName = stripslashes($_POST['cName']);
@@ -88,7 +93,10 @@
             crossorigin="anonymous"></script>
     <style>
         /* Style to fix link button inside form */
-        button a, button a:hover{color: inherit;text-decoration: inherit;}
+        button a, button a:hover {
+            color: inherit;
+            text-decoration: inherit;
+        }
     </style>
 </head>
 <body>
@@ -98,11 +106,13 @@
     </div>
     <div class="row">
         <div class="col-xs-8">
+            <?php echo $body ?>
             <form class="form" action="Conference_Summary_Young.php" method="post">
                 <fieldset>
                     <legend>Seminars</legend>
                     <div class="checkbox">
-                        <label><input type="checkbox" id="javascript" name="javascript" value="javascript">JavaScript</label>
+                        <label><input type="checkbox" id="javascript" name="javascript"
+                                      value="javascript">JavaScript</label>
                     </div>
                     <div class="checkbox">
                         <label><input type="checkbox" id="php" name="php" value="php">PHP</label>
@@ -123,7 +133,7 @@
                     </div>
                 </fieldset>
             </form>
-        </div>
-</div>
+        </div><!-- .row -->
+    </div><!-- .container -->
 </body>
 </html>

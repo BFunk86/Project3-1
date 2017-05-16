@@ -1,4 +1,10 @@
 <?php
+    /**
+     * The Conference_Company_Young.php script is used to display the company information form.
+     * It also collects all of the information submitted on the personal information form and saves it to
+     * the Session after validating that everything has been filed in.
+     */
+
     // Validate values from Personal Information form
     session_start();
 
@@ -124,6 +130,7 @@
     </div>
     <div class="row">
         <div class="col-xs-8">
+            <?php echo $body ?>
             <form class="form" action="Conference_Seminars_Young.php" method="post">
                 <fieldset>
                     <legend>Company Information</legend>
@@ -159,15 +166,7 @@
                 </fieldset>
             </form>
         </div>
-
-        <?php
-
-            /**
-             *
-             * Author: Brandon Young
-             */
-        ?>
-    </div>
-</div>
+    </div><!-- .row -->
+</div><!-- .container -->
 </body>
 </html>
